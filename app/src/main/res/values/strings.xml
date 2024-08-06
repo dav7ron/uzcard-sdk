@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestSDKApp</string>
+    <string name="start_tokenization">Start tokenization</string>
+</resources>

@@ -1,0 +1,16 @@
+package uz
+
+enum class StateStatus {
+    USER_NOT_REGISTERED,
+    PHONE_NUMBER_MATCHED,
+    PHONE_NUMBER_NOT_MATCHED,
+    CARD_NOT_TOKENIZED,
+    CARD_TOKENIZED,
+    SOME_PROPS_ARE_EMPTY,
+    DEVICE_ID_NOT_MATCHED,
+}
+
+enum class UserStatus {
+    NEW_USER,
+    OLD_USER
+}
