@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_view_text_size">10sp</dimen>
+    <dimen name="window_padding">30dp</dimen>
+    <dimen name="text_view_large_text_size">18sp</dimen>
+    <dimen name="text_view_toolbar_text_size">22sp</dimen>
+    <dimen name="text_view_medium_text_size">16sp</dimen>
+    <dimen name="text_view_small_text_size">12sp</dimen>
+    <dimen name="text_view_small14_text_size">14sp</dimen>
+    <dimen name="text_view_launcher_title">17sp</dimen>
+    <dimen name="text_view_launcher_text">10sp</dimen>
+    <dimen name="button_between_top_margin">15dp</dimen>
+    <dimen name="button_text_size">9sp</dimen>
+    <dimen name="image_view_toolbar_icon_width">30dp</dimen>
+    <dimen name="text_view_sign_up_title">26sp</dimen>
+    <dimen name="edit_text_padding_top">13dp</dimen>
+    <dimen name="edit_text_padding_bottom">7dp</dimen>
+    <dimen name="edit_text_text">9sp</dimen>
+    <dimen name="text_view_message_dialog_fragment_title">11sp</dimen>
+</resources>

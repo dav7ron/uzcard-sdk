@@ -1,5 +1,6 @@
 package uz.eopc.testsdkapp
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dataLoader: ProviderDataLoader
 
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -25,8 +27,6 @@ class MainActivity : AppCompatActivity() {
 
         val mainProcessor = MainProcessorImpl(this, dataLoader)
 
-        // Initially hide the button
-        binding.btnStartTokenization.visibility = View.GONE
         binding.tvStatus.visibility = View.GONE
 
         mainProcessor.checkStatus(
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                     ).show()
 
                     if (status == StateStatus.CARD_NOT_TOKENIZED || status == StateStatus.USER_NOT_REGISTERED) {
-                        binding.btnStartTokenization.visibility = View.VISIBLE
+                        binding.btnStartTokenization.isEnabled = true
                     } else if (status == StateStatus.CARD_TOKENIZED) {
                         binding.tvStatus.visibility = View.VISIBLE
                     }
